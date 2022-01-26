@@ -5,6 +5,7 @@
   "homepage": "/elementic",
   "scripts": {
     "build": "npx eleventy",
+    "build:prod": "env NODE_ENV=production npx eleventy --pathprefix 'elementic'",
     "debug": "DEBUG=* npx eleventy",
     "deploy": "npx eleventy && gh-pages -d _site",
     "start": "npx eleventy --serve"
