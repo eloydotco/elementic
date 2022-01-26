@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Elementic</title>
+  <subtitle>Blog sobre tecnologías de información y comunicación</subtitle>
+  <link href="https://elementic.eloy.co/feed.xml" rel="self"/>
+  <link href="https://elementic.eloy.co/"/>
+  <updated>2022-01-05T00:00:00Z</updated>
+  <id>https://elementic.eloy.co/</id>
+  <author>
+    <name>Eloy Castelo Otero</name>
+    <email>hi@eloy.co</email>
+  </author>
+  
+  <entry>
+    <title>Prueba 5</title>
+    <link href="https://elementic.eloy.co/elementic/posts/t5/"/>
+    <updated>2022-01-05T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/t5/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Prueba 4</title>
+    <link href="https://elementic.eloy.co/elementic/posts/t4/"/>
+    <updated>2022-01-04T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/t4/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Prueba 2</title>
+    <link href="https://elementic.eloy.co/elementic/posts/t2/"/>
+    <updated>2022-01-02T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/t2/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Prueba 3</title>
+    <link href="https://elementic.eloy.co/elementic/posts/t3/"/>
+    <updated>2022-01-01T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/t3/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Prueba 1</title>
+    <link href="https://elementic.eloy.co/elementic/posts/t1/"/>
+    <updated>2022-01-01T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/t1/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Introducción al blog</title>
+    <link href="https://elementic.eloy.co/elementic/posts/introduccion/"/>
+    <updated>2022-01-01T00:00:00Z</updated>
+    <id>https://elementic.eloy.co/elementic/posts/introduccion/</id>
+    <content type="html">&lt;p&gt;Este post sirve como prueba e introduccion al blog Tecnologías Elementales&lt;/p&gt;
+</content>
+  </entry>
+</feed>
