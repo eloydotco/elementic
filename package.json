@@ -8,6 +8,7 @@
     "build:prod": "env NODE_ENV=production npx eleventy --pathprefix 'elementic'",
     "debug": "DEBUG=* npx eleventy",
     "deploy": "npx eleventy && gh-pages -d _site",
+    "prepare": "husky install",
     "start": "npx eleventy --serve"
   },
   "keywords": [],
