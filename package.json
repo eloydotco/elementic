@@ -5,10 +5,8 @@
   "homepage": "/elementic",
   "scripts": {
     "build": "npx eleventy",
-    "build:prod": "env NODE_ENV=production npx eleventy --pathprefix 'elementic'",
     "debug": "DEBUG=* npx eleventy",
     "deploy": "npx eleventy && gh-pages -d _site",
-    "prepare": "husky install",
     "start": "npx eleventy --serve"
   },
   "keywords": [],
@@ -17,7 +15,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "gh-pages": "^3.2.3",
-    "husky": "^7.0.4"
+    "gh-pages": "^3.2.3"
   }
 }
