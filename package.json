@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Blog sobre tecnologías de información y comunicación",
   "scripts": {
-    "build": "eleventy",
-    "build:prod": "env NODE_ENV=production eleventy --pathprefix 'elementic'",
-    "debug": "DEBUG=* eleventy",
-    "start": "eleventy --serve"
+    "build": "npx eleventy",
+    "build:prod": "env NODE_ENV=production npx eleventy --pathprefix 'elementic'",
+    "debug": "DEBUG=* npx eleventy",
+    "start": "npx eleventy --serve"
   },
   "keywords": [],
   "author": "@eloydotco",
