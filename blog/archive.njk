@@ -12,7 +12,7 @@ pagination:
   {% for post in posts %}
   <article>
     <p>
-      <a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date }}
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a> - {{ post.date }}
       {% excerpt post %}
     </p>
   </article>
@@ -22,32 +22,32 @@ pagination:
     <ol>
       {% if page.url != pagination.href.first %}
       <li>
-        <a href="{{ pagination.href.first }}">&lt;&lt;</a>
+        <a href="{{ pagination.href.first | url }}">&lt;&lt;</a>
       </li>
       {% endif %}
 
       {% if pagination.href.previous %}
       <li>
-        <a href="{{ pagination.href.previous }}">&lt;</a>
+        <a href="{{ pagination.href.previous | url }}">&lt;</a>
       </li>
       {% endif %}
 
       {%- for pageEntry in pagination.pages %}
       <li>
-        <a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url==pagination.hrefs[ loop.index0 ] %}
+        <a href="{{ pagination.hrefs[ loop.index0 ] | url }}" {% if page.url==pagination.hrefs[ loop.index0 ] %}
           aria-current="page" {% endif %}>{{ loop.index }}</a>
       </li>
       {%- endfor %}
 
       {% if pagination.href.next %}
       <li>
-        <a href="{{ pagination.href.next }}">&gt;</a>
+        <a href="{{ pagination.href.next | url }}">&gt;</a>
       </li>
       {% endif %}
 
       {% if page.url != pagination.href.last %}
       <li>
-        <a href="{{ pagination.href.last }}">&gt;&gt;</a>
+        <a href="{{ pagination.href.last | url }}">&gt;&gt;</a>
       </li>
       {% endif %}
     </ol>

@@ -1,13 +1,15 @@
 {
   "name": "elementic",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Blog sobre tecnologías de información y comunicación",
   "scripts": {
     "build": "eleventy",
+    "build:prod": "env NODE_ENV=production eleventy --pathprefix 'elementic'",
+    "debug": "DEBUG=* eleventy",
     "start": "eleventy --serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "@eloydotco",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",

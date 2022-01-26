@@ -14,7 +14,7 @@ permalink: "/categories/{{ category | slug }}/index.html"
   {% for post in posts reversed %}
   <article>
     <p>
-      <a href="{{post.url}}">{{ post.data.title }}</a> - {{ post.date }}
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a> - {{ post.date }}
       {% excerpt post %}
     </p>
   </article>
