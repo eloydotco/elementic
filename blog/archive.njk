@@ -4,52 +4,51 @@ pagination:
   size: 2
   alias: posts
   reverse: true
+layout: main
 ---
 
 <section>
   <h2>Todas las entradas del blog</h2>
 
   {% for post in posts %}
-  <article>
-    <p>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a> - {{ post.date }}
-      {% excerpt post %}
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        -
+        {{ post.date | niceDate }}
+        {% excerpt post %}
+      </p>
+    </article>
   {% endfor %}
 
-  <nav aria-label="Navegaci&oacute; de las entradas del blog">
-    <ol>
-      {% if page.url != pagination.href.first %}
+  <nav aria-label="Navegaci&oacute; de las entradas del blog" class="pagination is-centered block" role="navigation">
+    <ul class="pagination-list">
       <li>
-        <a href="{{ pagination.href.first | url }}">&lt;&lt;</a>
+        <a class="pagination-previous" {% if pagination.href.previous %} href="{{ pagination.href.previous | url }}" {% else %} disabled {% endif%}>
+          <i class="ri-arrow-left-s-line"></i>
+        </a>
       </li>
-      {% endif %}
-
-      {% if pagination.href.previous %}
-      <li>
-        <a href="{{ pagination.href.previous | url }}">&lt;</a>
-      </li>
-      {% endif %}
-
       {%- for pageEntry in pagination.pages %}
-      <li>
-        <a href="{{ pagination.hrefs[ loop.index0 ] | url }}" {% if page.url==pagination.hrefs[ loop.index0 ] %}
-          aria-current="page" {% endif %}>{{ loop.index }}</a>
-      </li>
+        <li>
+          {% if page.url == pagination.hrefs[loop.index0] %}
+            <a aria-current="page" aria-label="Ir a la p&aacute;gina {{ loop.index }}" class="pagination-link is-current">
+              {{ loop.index }}
+            </a>
+          {% else %}
+            <a class="pagination-link" href="{{ pagination.hrefs[loop.index0] | url }}" aria-label="P&acute;gina {{ loop.index }}">
+              {{ loop.index }}
+            </a>
+          {% endif %}
+        </li>
       {%- endfor %}
-
-      {% if pagination.href.next %}
       <li>
-        <a href="{{ pagination.href.next | url }}">&gt;</a>
+        <a class="pagination-next" {% if pagination.href.next %} href="{{ pagination.href.next | url }}" {% else %} disabled {% endif %}>
+          <i class="ri-arrow-right-s-line"></i>
+        </a>
       </li>
-      {% endif %}
-
-      {% if page.url != pagination.href.last %}
-      <li>
-        <a href="{{ pagination.href.last | url }}">&gt;&gt;</a>
-      </li>
-      {% endif %}
-    </ol>
+      <!-- <li>
+        <span class="pagination-ellipsis">&hellip;</span>
+      </li> -->
+    </ul>
   </nav>
 </section>

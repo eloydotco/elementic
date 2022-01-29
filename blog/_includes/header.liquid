@@ -1,0 +1,29 @@
+<header>
+  <nav aria-label="main navigation" class="navbar is-fixed-top is-warning" role="navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <h2 class="title is-3">ELEMENTIC</h2>
+      </a>
+
+      <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="mainNavbar" role="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="mainNavbar">
+      <ul class="navbar-end">
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/" {% if page.url==" /" %} aria-current="page" {% endif %}>Portada</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/archive" {% if page.url==" /archive/" %} aria-current="page" {% endif %}>Archivo</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/about" {% if page.url==" /about/" %} aria-current="page" {% endif %}>Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

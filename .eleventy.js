@@ -3,6 +3,7 @@ const {
   extractExcerpt,
   getCategoriesCollection,
   filterByCategory,
+  filterDate,
 } = require('./utils/eleventy-utils');
 
 module.exports = (eleventyConfig) => {
@@ -10,6 +11,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode('excerpt', extractExcerpt);
   eleventyConfig.addCollection('categories', getCategoriesCollection);
   eleventyConfig.addFilter('filterByCategory', filterByCategory);
+  eleventyConfig.addFilter('niceDate', filterDate);
 
   return {
     dir: {

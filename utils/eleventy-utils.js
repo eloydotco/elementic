@@ -13,6 +13,11 @@ function filterByCategory(posts, category) {
     .filter((categories) => categories.includes(category.toLowerCase()));
 }
 
+const esDate = new Intl.DateTimeFormat('es');
+function filterDate(date) {
+  return esDate.format(date);
+}
+
 function getCategoriesCollection(collectionApi) {
   return collectionApi
     .getFilteredByTag('post')
@@ -20,4 +25,4 @@ function getCategoriesCollection(collectionApi) {
     .reduce((prev, curr) => [...prev, ...curr.filter((cat) => !prev.includes(cat))], []);
 }
 
-module.exports = { extractExcerpt, filterByCategory, getCategoriesCollection };
+module.exports = { extractExcerpt, filterByCategory, filterDate, getCategoriesCollection };

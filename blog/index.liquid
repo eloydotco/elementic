@@ -1,12 +1,19 @@
-<section>
-  <h2>Entradas del blog:</h2>
+---
+title: Elementic
+layout: main
+---
+
+<section class="section">
+  <h1 class="title">Entradas del blog:</h1>
 
   {% for post in collections.post reversed %}
-  <article>
-    <p>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a> - {{ post.date }}
-      {% excerpt post %}
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        -
+        {{ post.date | niceDate }}
+        {% excerpt post %}
+      </p>
+    </article>
   {% endfor %}
 </section>
