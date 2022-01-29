@@ -1,47 +1,136 @@
-<section>
-  <h2>Entradas del blog:</h2>
+
+<!doctype html>
+<html class="has-navbar-fixed-top" lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Elementic</title>
+  </head>
+
+  <body>
+    
+    <header>
+  <nav aria-label="main navigation" class="navbar is-fixed-top is-warning" role="navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <h2 class="title is-3">ELEMENTIC</h2>
+      </a>
+
+      <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="mainNavbar" role="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="mainNavbar">
+      <ul class="navbar-end">
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/" >Portada</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/archive" >Archivo</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/about" >Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  
+    <main>
+      
+<section class="section">
+  <h1 class="title">Entradas del blog:</h1>
 
   
-  <article>
-    <p>
-      <a href="/elementic/posts/t5/">Prueba 5</a> - Wed Jan 05 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/t5/">Prueba 5</a>
+        -
+        5/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
-  <article>
-    <p>
-      <a href="/elementic/posts/t4/">Prueba 4</a> - Tue Jan 04 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/t4/">Prueba 4</a>
+        -
+        4/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
-  <article>
-    <p>
-      <a href="/elementic/posts/t2/">Prueba 2</a> - Sun Jan 02 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/t2/">Prueba 2</a>
+        -
+        2/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
-  <article>
-    <p>
-      <a href="/elementic/posts/t3/">Prueba 3</a> - Sat Jan 01 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/t3/">Prueba 3</a>
+        -
+        1/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
-  <article>
-    <p>
-      <a href="/elementic/posts/t1/">Prueba 1</a> - Sat Jan 01 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/t1/">Prueba 1</a>
+        -
+        1/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
-  <article>
-    <p>
-      <a href="/elementic/posts/introduccion/">Introducción al blog</a> - Sat Jan 01 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
-      <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
-    </p>
-  </article>
+    <article>
+      <p>
+        <a href="/elementic/posts/introduccion/">Introducción al blog</a>
+        -
+        1/1/2022
+        <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+      </p>
+    </article>
   
 </section>
+    </main>
+
+    <footer class="footer">
+  <p class="has-text-centered">
+    <strong>ELEMENTIC</strong>. Hecho con
+    <i class="ri-heart-3-fill"></i>
+    por
+    <a href="https://eloy.co" rel="noopener" target="_blank">Eloy</a>.
+  </p>
+</footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const $navbarBurgers = document.querySelectorAll(".navbar-burger");
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(el => {
+        el.addEventListener("click", () => {
+          el.classList.toggle("is-active");
+          document
+            .getElementById(el.dataset.target)
+            .classList
+            .toggle("is-active");
+        });
+      });
+    }
+  });
+</script>
+
+  </body>
+</html>

@@ -1,1 +1,93 @@
+
+<!doctype html>
+<html class="has-navbar-fixed-top" lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Prueba 2</title>
+  </head>
+
+  <body>
+    
+    <header>
+  <nav aria-label="main navigation" class="navbar is-fixed-top is-warning" role="navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <h2 class="title is-3">ELEMENTIC</h2>
+      </a>
+
+      <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="mainNavbar" role="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="mainNavbar">
+      <ul class="navbar-end">
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/" >Portada</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/archive" >Archivo</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link is-arrowless" href="/about" >Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  
+    <main>
+      
+<p>
+  <strong>Publicado:</strong>
+  2/1/2022<br/>
+  <strong>Categor&iacute;as:</strong>
+  
+    <a href="/categories/tic">TIC</a>
+    ,
+    
+  
+    <a href="/categories/test">test</a>
+    
+  
+</p>
+
 <p>Este post sirve como prueba e introduccion al blog Tecnologías Elementales</p>
+
+    </main>
+
+    <footer class="footer">
+  <p class="has-text-centered">
+    <strong>ELEMENTIC</strong>. Hecho con
+    <i class="ri-heart-3-fill"></i>
+    por
+    <a href="https://eloy.co" rel="noopener" target="_blank">Eloy</a>.
+  </p>
+</footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const $navbarBurgers = document.querySelectorAll(".navbar-burger");
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(el => {
+        el.addEventListener("click", () => {
+          el.classList.toggle("is-active");
+          document
+            .getElementById(el.dataset.target)
+            .classList
+            .toggle("is-active");
+        });
+      });
+    }
+  });
+</script>
+
+  </body>
+</html>
