@@ -7,6 +7,7 @@ const {
 } = require('./utils/eleventy-utils');
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPassthroughCopy({ static: '/' });
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addShortcode('excerpt', extractExcerpt);
   eleventyConfig.addCollection('categories', getCategoriesCollection);
@@ -15,8 +16,7 @@ module.exports = (eleventyConfig) => {
 
   return {
     dir: {
-      input: 'blog',
-      pathPrefix: '/elementic/',
+      input: 'src',
     },
   };
 };
