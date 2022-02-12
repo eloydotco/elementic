@@ -1,0 +1,43 @@
+{
+  "name": "Elementic",
+  "description": "Blog sobre tecnologías de información y comunicación",
+  "url": "https://elementic.eloy.co",
+  "author": {
+    "name": "Eloy Castelo Otero",
+    "email": "hi@eloy.co",
+    "twitterHandle": "eloydotco"
+  },
+  "defaultSocialImage": "/images/default-social-image.png",
+  "headerLinks": [
+    {
+      "text": "Blog",
+      "url": "/blog",
+      "external": false
+    },
+    {
+      "text": "About",
+      "url": "/about",
+      "external": false
+    }
+  ],
+  "socialLinks": [
+    {
+      "text": "GitHub",
+      "url": "https://github.com/eloydotco/elementic",
+      "external": true
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/eloydotco",
+      "external": true
+    }
+  ],
+  "footerLinks": [
+    {
+      "text": "RSS",
+      "url": "/feed.xml",
+      "external": true
+    }
+  ],
+  "showFooterAttribution": true
+}

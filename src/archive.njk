@@ -1,54 +1,13 @@
----
-pagination:
-  data: collections.post
-  size: 2
-  alias: posts
-  reverse: true
-layout: main
+--- 
+layout: base.njk 
+permalink: /blog/ 
 ---
 
-<section>
-  <h2>Todas las entradas del blog</h2>
+<h1>Todas las entradas del blog</h1>
 
-  {% for post in posts %}
-    <article>
-      <p>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        -
-        {{ post.date | niceDate }}
-        {% excerpt post %}
-      </p>
-    </article>
-  {% endfor %}
+<div class="tags">
+  {% include "tags-list.njk" %}
+</div>
 
-  <nav aria-label="Navegaci&oacute; de las entradas del blog" class="pagination is-centered block" role="navigation">
-    <ul class="pagination-list">
-      <li>
-        <a class="pagination-previous" {% if pagination.href.previous %} href="{{ pagination.href.previous | url }}" {% else %} disabled {% endif%}>
-          <i class="ri-arrow-left-s-line"></i>
-        </a>
-      </li>
-      {%- for pageEntry in pagination.pages %}
-        <li>
-          {% if page.url == pagination.hrefs[loop.index0] %}
-            <a aria-current="page" aria-label="Ir a la p&aacute;gina {{ loop.index }}" class="pagination-link is-current">
-              {{ loop.index }}
-            </a>
-          {% else %}
-            <a class="pagination-link" href="{{ pagination.hrefs[loop.index0] | url }}" aria-label="P&acute;gina {{ loop.index }}">
-              {{ loop.index }}
-            </a>
-          {% endif %}
-        </li>
-      {%- endfor %}
-      <li>
-        <a class="pagination-next" {% if pagination.href.next %} href="{{ pagination.href.next | url }}" {% else %} disabled {% endif %}>
-          <i class="ri-arrow-right-s-line"></i>
-        </a>
-      </li>
-      <!-- <li>
-        <span class="pagination-ellipsis">&hellip;</span>
-      </li> -->
-    </ul>
-  </nav>
-</section>
+{% set postslist = collections.posts %}
+{% include "posts-list.njk" %}
