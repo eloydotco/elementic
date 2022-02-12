@@ -23,8 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addPassthroughCopy('src/static');
-  eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
+  eleventyConfig.addPassthroughCopy({ 'src/static': '.', 'src/images': 'images' });
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
 
   eleventyConfig.addShortcode('bundledcss', function () {
