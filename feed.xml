@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Elementic</title>
+  <title>Texto plano</title>
   <subtitle></subtitle>
-  <link href="https://elementic.eloy.co/feed.xml" rel="self"/>
-  <link href="https://elementic.eloy.co/"/>
+  <link href="https://textoplano.eloy.co/feed.xml" rel="self"/>
+  <link href="https://textoplano.eloy.co/"/>
   
     <updated>2022-01-02T00:00:00Z</updated>
   
-  <id>https://elementic.eloy.co</id>
+  <id>https://textoplano.eloy.co</id>
   <author>
     <name>Eloy Castelo Otero</name>
     <email>hi@eloy.co</email>
@@ -16,9 +16,9 @@
     
     <entry>
       <title>Introducción</title>
-      <link href="https://elementic.eloy.co/posts/introduccion/"/>
+      <link href="https://textoplano.eloy.co/posts/introduccion/"/>
       <updated>2022-01-01T00:00:00Z</updated>
-      <id>https://elementic.eloy.co/posts/introduccion/</id>
+      <id>https://textoplano.eloy.co/posts/introduccion/</id>
       <content type="html">
         <![CDATA[
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -32,9 +32,9 @@
     
     <entry>
       <title>Internet</title>
-      <link href="https://elementic.eloy.co/posts/internet/"/>
+      <link href="https://textoplano.eloy.co/posts/internet/"/>
       <updated>2022-01-02T00:00:00Z</updated>
-      <id>https://elementic.eloy.co/posts/internet/</id>
+      <id>https://textoplano.eloy.co/posts/internet/</id>
       <content type="html">
         <![CDATA[
       <p>Vamos a hablar sobre uno de los inventos más útiles y poderosos de la humanidad. Capaz de comunicar y unir a todo el planeta.</p>

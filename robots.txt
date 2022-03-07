@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://elementic.eloy.co/sitemap.xml
+Sitemap: https://textoplano.eloy.co/sitemap.xml

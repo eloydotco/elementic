@@ -4,7 +4,7 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/posts/introduccion/</loc>
+        <loc>https://textoplano.eloy.co/posts/introduccion/</loc>
         
           <lastmod>2022-01-01T00:00:00.000Z</lastmod>
         
@@ -15,7 +15,7 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/posts/internet/</loc>
+        <loc>https://textoplano.eloy.co/posts/internet/</loc>
         
           <lastmod>2022-01-02T00:00:00.000Z</lastmod>
         
@@ -26,20 +26,9 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/about/</loc>
+        <loc>https://textoplano.eloy.co/about/</loc>
         
-          <lastmod>2022-02-12T10:27:14.198Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://elementic.eloy.co/blog/</loc>
-        
-          <lastmod>2022-02-12T10:27:14.198Z</lastmod>
+          <lastmod>2022-03-07T09:46:06.297Z</lastmod>
         
         
         
@@ -48,20 +37,9 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/</loc>
+        <loc>https://textoplano.eloy.co/blog/</loc>
         
-          <lastmod>2022-02-12T10:27:14.202Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://elementic.eloy.co/robots.txt</loc>
-        
-          <lastmod>2022-02-12T10:27:14.202Z</lastmod>
+          <lastmod>2022-03-07T09:46:06.297Z</lastmod>
         
         
         
@@ -70,9 +48,9 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/tags/internet/</loc>
+        <loc>https://textoplano.eloy.co/</loc>
         
-          <lastmod>2022-02-12T10:27:14.202Z</lastmod>
+          <lastmod>2022-03-07T09:46:06.301Z</lastmod>
         
         
         
@@ -81,9 +59,31 @@
   
     
       <url>
-        <loc>https://elementic.eloy.co/tags/intro/</loc>
+        <loc>https://textoplano.eloy.co/robots.txt</loc>
         
-          <lastmod>2022-02-12T10:27:14.202Z</lastmod>
+          <lastmod>2022-03-07T09:46:06.301Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://textoplano.eloy.co/tags/intro/</loc>
+        
+          <lastmod>2022-03-07T09:46:06.301Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://textoplano.eloy.co/tags/internet/</loc>
+        
+          <lastmod>2022-03-07T09:46:06.301Z</lastmod>
         
         
         
