@@ -1,7 +1,7 @@
 {
-  "name": "Elementic",
-  "description": "Blog sobre tecnologías de información y comunicación",
-  "url": "https://elementic.eloy.co",
+  "name": "Texto plano",
+  "description": "Blog sobre tecnologías de información en general e ingeniería de software en particular",
+  "url": "https://textoplano.eloy.co",
   "author": {
     "name": "Eloy Castelo Otero",
     "email": "hi@eloy.co",
@@ -23,7 +23,7 @@
   "socialLinks": [
     {
       "text": "GitHub",
-      "url": "https://github.com/eloydotco/elementic",
+      "url": "https://github.com/eloydotco/textoplano",
       "external": true
     },
     {

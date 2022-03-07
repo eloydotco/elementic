@@ -1,4 +1,4 @@
-name: Build Elementic Blog
+name: Build Blog
 
 on:
   push:

@@ -1,8 +1,7 @@
 {
-  "name": "elementic",
+  "name": "textoplano",
   "version": "0.1.0",
-  "description": "Blog sobre tecnologías de información y comunicación",
-  "homepage": "/elementic",
+  "description": "Blog sobre tecnologías de información en general e ingeniería de software en particular",
   "scripts": {
     "dev": "run-p dev:*",
     "start": "eleventy --serve",
