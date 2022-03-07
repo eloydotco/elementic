@@ -1,0 +1,21 @@
+{
+  "name": "Texto plano",
+  "description": "Blog sobre tecnologías de información en general e ingeniería de software en particular",
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/images/favicon.ico",
+      "type": "image/ico",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/me.png",
+      "type": "image/png",
+      "sizes": "612x612"
+    }
+  ]
+}
