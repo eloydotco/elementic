@@ -8,10 +8,7 @@ const isProd = process.env.ELEVENTY_ENV === 'production';
 const baseFilename = isProd ? 'main.[contenthash]' : 'main';
 
 module.exports = {
-  entry: [
-    path.resolve(__dirname, 'src', 'js', 'main.js'),
-    path.resolve(__dirname, 'src', 'css', 'main.css'),
-  ],
+  entry: [path.resolve(__dirname, 'src', 'css', 'main.css')],
   output: {
     path: path.resolve(__dirname, 'public', 'assets'),
     filename: `${baseFilename}.js`,
@@ -24,18 +21,6 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-        ],
-      },
       {
         test: /\.css$/,
         use: [

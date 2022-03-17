@@ -13,7 +13,6 @@ const manifestPath = path.resolve(__dirname, 'public', 'assets', 'manifest.json'
 const manifest = isProd
   ? JSON.parse(fs.readFileSync(manifestPath, { encoding: 'utf8' }))
   : {
-      'main.js': '/assets/main.js',
       'main.css': '/assets/main.css',
     };
 
@@ -28,10 +27,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('bundledcss', function () {
     return manifest['main.css'] ? `<link href="${manifest['main.css']}" rel="stylesheet" />` : '';
-  });
-
-  eleventyConfig.addShortcode('bundledjs', function () {
-    return manifest['main.js'] ? `<script src="${manifest['main.js']}"></script>` : '';
   });
 
   eleventyConfig.addFilter('excerpt', (post) => {
