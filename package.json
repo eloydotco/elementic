@@ -15,7 +15,6 @@
   "keywords": [],
   "author": "@eloydotco",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-img": "^2.0.0",
@@ -29,10 +28,11 @@
     "html-minifier": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.0",
     "npm-run-all": "^4.1.5",
-    "postcss-loader": "^6.2.1",
     "postcss": "^8.4.13",
+    "postcss-loader": "^6.2.1",
     "terser-webpack-plugin": "^5.3.1",
-    "webpack-manifest-plugin": "^5.0.0",
-    "webpack": "^5.72.0"
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-manifest-plugin": "^5.0.0"
   }
 }
