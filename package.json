@@ -20,7 +20,7 @@
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "autoprefixer": "^10.4.6",
+    "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.7",
     "eleventy-plugin-reading-time": "^0.0.1",
